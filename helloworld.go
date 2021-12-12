@@ -7,12 +7,13 @@ import (
 )
 
 //There’s no key-word class in Go
-func main() {
+func main() { //main-method does not have any args
 	/*******************
 	Example of printing hello world in console
 	********************/
 	var x string = "hello" //two ways of declaration and initialize variable
 	y := "world"
+	fmt.Println("My greeting: " + x + " " + y + "!")
 
 	/*******************
 	Example of package http
@@ -28,7 +29,6 @@ func main() {
 	/*******************
 	Example of calling function
 	********************/
-	fmt.Println("My greeting: " + x + " " + y + "!")
 	fmt.Println("call function sum(), result is", sum(10, 20))
 
 	/*******************
